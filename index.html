@@ -19,6 +19,7 @@
 		body {
 			font: 1em/1.5 'Merriweather', Georgia, serif;
 			padding: 3em 0;
+
 		}
 
 		h1 {
@@ -40,7 +41,7 @@
 			margin-top: 1.5em;
 			font-style: italic;
 			font-weight: 300;
-			color: #CC9B70;
+			color: darkblue;
 			text-align: left;
 		}
 
@@ -63,12 +64,17 @@
 		}
 
 		figure.half {
-			width: 50%;
-			float: left;
+			width: 100%;
+
 		}
 
 		.figure-grp+.figure-grp figure {
 			margin-top: -3em;
+		}
+
+		.figure-grp {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 		}
 
 		blockquote {
@@ -94,6 +100,8 @@
 			max-width: 45em;
 			margin-left: auto;
 			margin-right: auto;
+			font-size: clamp(2rem, 1rem +3vw, 3rem);
+			padding-inline: 30px;
 		}
 
 		img {
